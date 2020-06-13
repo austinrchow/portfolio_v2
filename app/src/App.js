@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Front from './front.js'
+import OnLoad from './onLoad.js'
 
 function App() {
   return (
     <div className="App">
-      <Front />
+      <OnLoad/>
     </div>
   );
 }
