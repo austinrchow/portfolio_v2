@@ -13,18 +13,18 @@ import Contact from './components/Contact.js';
 const Application = () => {
   return (
     <div>
-    <Nav />
-    <Home />
-    <About />
-    <Experience />
-    <Work />
-    <Contact />
+      <Nav />
+      <Home />
+      <About />
+      <Experience />
+      <Work />
+      <Contact />
     </div>
   )
 };
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {

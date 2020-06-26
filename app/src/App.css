@@ -72,18 +72,22 @@
 }
 
 nav {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
   min-height: 10vh;
   color: white;
 }
 
-.nav-links > .active {
-  border-bottom: 1px solid white;
+#logoStyle {
+  height: 30px;
+  margin-left: 5vw;
 }
 
 .nav-links {
+  margin-left: auto;
+  margin-right: 5vw;
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -91,27 +95,82 @@ nav {
   list-style: none;
 }
 
+.nav-links > .active {
+  border-bottom: 1px solid white;
+}
+
 .home-section {
   height:100vh;
+  width: 60vw;
   background-color: rgb(32,35,48);
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.home-text {
+  margin-top: 25vh;
+}
+
+.home-1 {
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+}
+
+.home-2 {
+  margin-top: 1vh;
+  font-size: 100px;
+  font-weight: 900;
+  color: #ccd6f6
+}
+
+.home-3 {
+  font-size: 90px;
+  font-weight: 900;
+  color: #8892b0;
+
+}
+
+.home-4 {
+  font-size: 25px;
+  color: #8892b0;
+  width: 30vw;
+  margin-top: 5vh;
+}
+
 
 .about-section {
   height:100vh;
   background-color: skyblue;
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+
 }
+
 
 .experience-section {
   height:100vh;
   background-color: red;
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+
 }
 
 .work-section {
   height:100vh;
   background-color: blue;
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+
 }
 
 .contact-section {
   height:100vh;
   background-color: pink;
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+
 }
