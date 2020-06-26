@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import OnLoad from './components/OnLoad.js';
@@ -10,18 +10,32 @@ import Work from './components/Work.js';
 import Contact from './components/Contact.js';
 
 
+const Application = () => {
+  return (
+    <div>
+    <Nav />
+    <Home />
+    <About />
+    <Experience />
+    <Work />
+    <Contact />
+    </div>
+  )
+};
+
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5500)
+  });
+
   return (
     <div className="App">
-      <OnLoad />
-      <Nav />
-      <Home />
-      <About />
-      <Work />
-      <Experience />
-      <Contact />
+      { loading ? <OnLoad /> : <Application /> }
     </div>
-
   );
 }
 
